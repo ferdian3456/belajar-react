@@ -20,6 +20,10 @@ import {
     ChevronRight,
     Images,
     FileCheck,
+    MapPin,
+    Search,
+    SlidersHorizontal,
+    Star,
 } from 'lucide-react-native';
 import type { LucideIcon } from 'lucide-react-native';
 import { cssInterop } from 'nativewind';
@@ -53,6 +57,10 @@ const withClassName = (icon: LucideIcon) =>
     ChevronRight,
     Images,
     FileCheck,
+    MapPin,
+    Search,
+    SlidersHorizontal,
+    Star,
 ].forEach(withClassName);
 
 export {
@@ -76,4 +84,8 @@ export {
     ChevronRight,
     Images,
     FileCheck,
+    MapPin,
+    Search,
+    SlidersHorizontal,
+    Star,
 };
