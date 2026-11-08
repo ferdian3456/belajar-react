@@ -120,7 +120,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example.avif')}
+                                source={require('../../../assets/images/mandor-profile-example-1.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -156,7 +156,208 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example.jpg')}
+                                source={require('../../../assets/images/mandor-project-example-1.jpg')}
+                                contentFit='cover'
+                                className='h-48 rounded-xl'
+                            />
+                            <View className='absolute bottom-3 left-3  rounded-xl bg-black/70 px-3 py-2'>
+                                <Text className='font-jakarta-semibold text-sm text-white'>
+                                    Renovasi Rumah di Graha Padma
+                                </Text>
+                            </View>
+                        </View>
+
+                        {/* harGa */}
+                        <View></View>
+                        <View className='mt-4 flex gap-y-1'>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta text-xs text-muted'>
+                                    mulai dari
+                                </Text>
+                            </View>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta-bold text-[1rem]'>
+                                    Rp 1,2 jt/m²
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+
+                    {/* 3 */}
+                    <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
+                        <View className='flex flex-row gap-x-3'>
+                            <Image
+                                source={require('../../../assets/images/mandor-profile-example-2.avif')}
+                                contentFit='cover'
+                                className='size-14 rounded-full'
+                            />
+                            <View className='flex flex-col gap-y-2'>
+                                {/* info */}
+
+                                <View className='just flex flex-col gap-y-[0.4rem]'>
+                                    <Text className='font-jakarta-bold text-sm'>
+                                        Dedi Supriyadi
+                                    </Text>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <Star
+                                            stroke={'none'}
+                                            fill={'#FBBC04'}
+                                            className='size-4'
+                                        />
+                                        <Text className='font-jakarta-bold text-xs'>
+                                            4.9
+                                        </Text>
+                                        <Text className='font-jakarta text-xs text-muted'>
+                                            (48 ulasan)
+                                        </Text>
+                                    </View>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <MapPin className='size-4 text-muted' />
+                                        <Text className='font-jakarta text-xs'>
+                                            Jakarta Selatan · 2.1 km
+                                        </Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+
+                        <View className='mt-4'>
+                            <Image
+                                source={require('../../../assets/images/mandor-project-example-2.jpg')}
+                                contentFit='cover'
+                                className='h-48 rounded-xl'
+                            />
+                            <View className='absolute bottom-3 left-3  rounded-xl bg-black/70 px-3 py-2'>
+                                <Text className='font-jakarta-semibold text-sm text-white'>
+                                    Renovasi Rumah di Graha Padma
+                                </Text>
+                            </View>
+                        </View>
+
+                        {/* harGa */}
+                        <View></View>
+                        <View className='mt-4 flex gap-y-1'>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta text-xs text-muted'>
+                                    mulai dari
+                                </Text>
+                            </View>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta-bold text-[1rem]'>
+                                    Rp 1,2 jt/m²
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+
+                    {/* 4 */}
+                    <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
+                        <View className='flex flex-row gap-x-3'>
+                            <Image
+                                source={require('../../../assets/images/mandor-profile-example-3.avif')}
+                                contentFit='cover'
+                                className='size-14 rounded-full'
+                            />
+                            <View className='flex flex-col gap-y-2'>
+                                {/* info */}
+
+                                <View className='just flex flex-col gap-y-[0.4rem]'>
+                                    <Text className='font-jakarta-bold text-sm'>
+                                        Dedi Supriyadi
+                                    </Text>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <Star
+                                            stroke={'none'}
+                                            fill={'#FBBC04'}
+                                            className='size-4'
+                                        />
+                                        <Text className='font-jakarta-bold text-xs'>
+                                            4.9
+                                        </Text>
+                                        <Text className='font-jakarta text-xs text-muted'>
+                                            (48 ulasan)
+                                        </Text>
+                                    </View>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <MapPin className='size-4 text-muted' />
+                                        <Text className='font-jakarta text-xs'>
+                                            Jakarta Selatan · 2.1 km
+                                        </Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+
+                        <View className='mt-4'>
+                            <Image
+                                source={require('../../../assets/images/mandor-project-example-3.jpg')}
+                                contentFit='cover'
+                                className='h-48 rounded-xl'
+                            />
+                            <View className='absolute bottom-3 left-3  rounded-xl bg-black/70 px-3 py-2'>
+                                <Text className='font-jakarta-semibold text-sm text-white'>
+                                    Renovasi Rumah di Graha Padma
+                                </Text>
+                            </View>
+                        </View>
+
+                        {/* harGa */}
+                        <View></View>
+                        <View className='mt-4 flex gap-y-1'>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta text-xs text-muted'>
+                                    mulai dari
+                                </Text>
+                            </View>
+                            <View className='flex flex-row justify-end'>
+                                <Text className='font-jakarta-bold text-[1rem]'>
+                                    Rp 1,2 jt/m²
+                                </Text>
+                            </View>
+                        </View>
+                    </View>
+
+                    {/* 5 */}
+                    <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
+                        <View className='flex flex-row gap-x-3'>
+                            <Image
+                                source={require('../../../assets/images/mandor-profile-example-4.avif')}
+                                contentFit='cover'
+                                className='size-14 rounded-full'
+                            />
+                            <View className='flex flex-col gap-y-2'>
+                                {/* info */}
+
+                                <View className='just flex flex-col gap-y-[0.4rem]'>
+                                    <Text className='font-jakarta-bold text-sm'>
+                                        Dedi Supriyadi
+                                    </Text>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <Star
+                                            stroke={'none'}
+                                            fill={'#FBBC04'}
+                                            className='size-4'
+                                        />
+                                        <Text className='font-jakarta-bold text-xs'>
+                                            4.9
+                                        </Text>
+                                        <Text className='font-jakarta text-xs text-muted'>
+                                            (48 ulasan)
+                                        </Text>
+                                    </View>
+                                    <View className='flex flex-row gap-x-2'>
+                                        <MapPin className='size-4 text-muted' />
+                                        <Text className='font-jakarta text-xs'>
+                                            Jakarta Selatan · 2.1 km
+                                        </Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+
+                        <View className='mt-4'>
+                            <Image
+                                source={require('../../../assets/images/mandor-project-example-4.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
