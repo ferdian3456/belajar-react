@@ -24,6 +24,7 @@ import {
     Search,
     SlidersHorizontal,
     Star,
+    FileText,
 } from 'lucide-react-native';
 import type { LucideIcon } from 'lucide-react-native';
 import { cssInterop } from 'nativewind';
@@ -61,6 +62,7 @@ const withClassName = (icon: LucideIcon) =>
     Search,
     SlidersHorizontal,
     Star,
+    FileText,
 ].forEach(withClassName);
 
 export {
@@ -88,4 +90,5 @@ export {
     Search,
     SlidersHorizontal,
     Star,
+    FileText,
 };

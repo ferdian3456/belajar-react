@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import {
@@ -12,6 +12,7 @@ import {
     Receipt,
     CircleDot,
 } from '@/components/icons';
+import { router } from 'expo-router';
 
 export default function HomeScreen() {
     return (
@@ -23,7 +24,7 @@ export default function HomeScreen() {
                 {/* header */}
                 <View className='flex flex-row items-center gap-x-5 px-5 py-5'>
                     <Image
-                        source={require('../../../assets/images/profile-example.jpeg')}
+                        source={require('../../../../assets/images/profile-example.jpeg')}
                         contentFit='cover'
                         className='size-11 rounded-3xl'
                     />
@@ -178,9 +179,12 @@ export default function HomeScreen() {
                         </Text>
                     </View>
 
-                    <View className='mt-5 bg-white'>
+                    <Pressable
+                        className='mt-5 bg-white'
+                        onPress={() => router.replace('/detail-project')}
+                    >
                         <Image
-                            source={require('../../../assets/images/project-example.jpeg')}
+                            source={require('../../../../assets/images/project-example.jpeg')}
                             contentFit='cover'
                             className='h-[8.125rem]'
                         />
@@ -219,7 +223,7 @@ export default function HomeScreen() {
                                 </View>
                             </View>
                         </View>
-                    </View>
+                    </Pressable>
                 </View>
             </ScrollView>
         </SafeAreaView>

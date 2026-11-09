@@ -53,7 +53,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example.avif')}
+                                source={require('../../../../assets/images/mandor-profile-example.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -89,7 +89,7 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example.jpg')}
+                                source={require('../../../../assets/images/mandor-project-example.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
@@ -120,7 +120,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example-1.avif')}
+                                source={require('../../../../assets/images/mandor-profile-example-1.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -156,7 +156,7 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example-1.jpg')}
+                                source={require('../../../../assets/images/mandor-project-example-1.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
@@ -187,7 +187,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example-2.avif')}
+                                source={require('../../../../assets/images/mandor-profile-example-2.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -223,7 +223,7 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example-2.jpg')}
+                                source={require('../../../../assets/images/mandor-project-example-2.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
@@ -254,7 +254,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example-3.avif')}
+                                source={require('../../../../assets/images/mandor-profile-example-3.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -290,7 +290,7 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example-3.jpg')}
+                                source={require('../../../../assets/images/mandor-project-example-3.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
@@ -321,7 +321,7 @@ export default function FindMandorScreen() {
                     <View className='flex flex-col rounded-3xl  bg-white px-3 py-3'>
                         <View className='flex flex-row gap-x-3'>
                             <Image
-                                source={require('../../../assets/images/mandor-profile-example-4.avif')}
+                                source={require('../../../../assets/images/mandor-profile-example-4.avif')}
                                 contentFit='cover'
                                 className='size-14 rounded-full'
                             />
@@ -357,7 +357,7 @@ export default function FindMandorScreen() {
 
                         <View className='mt-4'>
                             <Image
-                                source={require('../../../assets/images/mandor-project-example-4.jpg')}
+                                source={require('../../../../assets/images/mandor-project-example-4.jpg')}
                                 contentFit='cover'
                                 className='h-48 rounded-xl'
                             />
