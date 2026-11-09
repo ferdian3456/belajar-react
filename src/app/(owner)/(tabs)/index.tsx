@@ -49,7 +49,7 @@ export default function HomeScreen() {
                                 Dana di rekening penampung
                             </Text>
                             <Text className='font-jakarta-bold text-2xl text-white'>
-                                Rp185.000.000
+                                Rp 185.000.000
                             </Text>
                         </View>
 
