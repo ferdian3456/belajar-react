@@ -3,9 +3,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import {
     ArrowLeft,
+    Check,
     CircleCheck,
+    CircleDot,
     ChevronRight,
     FileText,
+    Lock,
+    FileCheck,
 } from '@/components/icons';
 import { Image } from 'expo-image';
 
@@ -159,10 +163,10 @@ export default function DetailProjectScreen() {
                     <View className='bg-white rounded-b-3xl px-4 py-4 border-b border border-outline flex flex-col gap-y-3'>
                         <View className='flex flex-row gap-x-4 items-center'>
                             <View className='bg-primary size-4 rounded-full'></View>
-                            <Text className='font-jakarta-semibold text-muted text-base'>
+                            <Text className='font-jakarta-semibold text-muted text-sm'>
                                 Terpakai · 77%
                             </Text>
-                            <Text className='font-jakarta-bold text-base ml-auto'>
+                            <Text className='font-jakarta-bold text-sm ml-auto'>
                                 Rp 143.700.000
                             </Text>
                         </View>
@@ -172,10 +176,10 @@ export default function DetailProjectScreen() {
 
                         <View className='flex flex-row gap-x-4 items-center'>
                             <View className='bg-field  size-4 rounded-full'></View>
-                            <Text className='font-jakarta-semibold text-muted text-base'>
+                            <Text className='font-jakarta-semibold text-muted text-sm'>
                                 Total uang muka
                             </Text>
-                            <Text className='font-jakarta-bold text-base ml-auto'>
+                            <Text className='font-jakarta-bold text-sm ml-auto'>
                                 Rp 186.000.000
                             </Text>
                         </View>
@@ -209,39 +213,142 @@ export default function DetailProjectScreen() {
                     </Text>
                 </View>
 
-                <Text className='font-jakarta-bold text-lg mt-5 mx-5'>
-                    Berkas & laporan
-                </Text>
-
-                <View className='mt-3 mx-5 flex flex-row justify-between'>
-                    {/* pdf */}
-                    <View className='bg-white border border-outline rounded-2xl flex flex-row  items-center gap-x-3 px-5 py-3'>
-                        <View className='bg-field rounded-2xl self-start px-3 py-3'>
-                            <FileText className='text-muted size-6' />
+                {/* list mileston */}
+                <View className='mt-3 mx-5'>
+                    {/* m1 */}
+                    <View className='flex-row gap-x-3'>
+                        <View className='items-center'>
+                            <View className='size-7 rounded-xl items-center justify-center bg-success'>
+                                <Check className='size-4 text-white' />
+                            </View>
+                            <View className='w-0.5 flex-1 bg-outline' />
                         </View>
-                        <View className='flex flex-col gap-y-1'>
-                            <Text className='font-jakarta-bold text-sm'>
-                                Laporan M1
-                            </Text>
-                            <Text className='font-jakarta text-muted text-xs'>
-                                PDF · 8.2 MB
+                        <View className='flex-1 mb-3 rounded-2xl bg-white p-4 gap-y-2 border border-outline'>
+                            <View className='flex-row items-start justify-between gap-x-2.5'>
+                                <Text className='flex-1 font-jakarta-bold text-sm text-foreground'>
+                                    M1 · Bongkar & persiapan
+                                </Text>
+                                <View className='flex-row items-center gap-x-1.5 rounded-xl px-2.5 py-1.5 bg-success-soft'>
+                                    <CircleCheck className='size-3 text-success' />
+                                    <Text className='font-jakarta-bold text-xs text-success'>
+                                        Selesai
+                                    </Text>
+                                </View>
+                            </View>
+                            <Text className='font-jakarta text-xs text-muted'>
+                                Disetujui 29 Nov · Termin Rp 12.400.000 cair
                             </Text>
                         </View>
                     </View>
 
-                    {/* perjanjian */}
-                    <View className='bg-white border border-outline rounded-2xl flex flex-row  items-center gap-x-3 px-5 py-3'>
-                        <View className='bg-field rounded-2xl self-start px-3 py-3'>
-                            <FileText className='text-muted size-6' />
+                    {/* m2 */}
+                    <View className='flex-row gap-x-3'>
+                        <View className='items-center'>
+                            <View className='size-7 rounded-xl items-center justify-center bg-primary'>
+                                <CircleDot className='size-3.5 text-white' />
+                            </View>
+                            <View className='w-0.5 flex-1 bg-outline' />
                         </View>
-                        <View className='flex flex-col gap-y-1'>
-                            <Text className='font-jakarta-bold text-sm'>
-                                Perjanjian
-                            </Text>
-                            <Text className='font-jakarta text-muted text-xs'>
-                                PDF · 2.4 MB
+                        <View className='flex-1 mb-3 rounded-2xl bg-white p-3.5 gap-y-2 border-2 border-primary'>
+                            <View className='flex-row items-start justify-between gap-x-2.5'>
+                                <Text className='flex-1 font-jakarta-bold text-sm text-foreground'>
+                                    M2 · Pengecoran lantai 2
+                                </Text>
+                                <View className='flex-row items-center gap-x-1.5 rounded-xl px-2.5 py-1.5 bg-warm-soft'>
+                                    <Text className='font-jakarta-bold text-xs text-warm'>
+                                        Perlu ditinjau
+                                    </Text>
+                                </View>
+                            </View>
+                            <Text className='font-jakarta text-xs text-muted'>
+                                12 foto progres · 3 struk menunggu persetujuan
                             </Text>
                         </View>
+                    </View>
+
+                    {/* m3 */}
+                    <View className='flex-row gap-x-3'>
+                        <View className='items-center'>
+                            <View className='size-7 rounded-xl items-center justify-center bg-field'>
+                                <Text className='font-jakarta-bold text-xs text-subtle'>
+                                    M3
+                                </Text>
+                            </View>
+                            <View className='w-0.5 flex-1 bg-outline' />
+                        </View>
+                        <View className='flex-1 mb-3 rounded-2xl bg-white p-3.5 gap-y-2 border border-outline'>
+                            <View className='flex-row items-start justify-between gap-x-2.5'>
+                                <Text className='flex-1 font-jakarta-bold text-sm text-foreground'>
+                                    M3 · Dinding & atap
+                                </Text>
+                                <View className='flex-row items-center gap-x-1.5 rounded-xl px-2.5 py-1.5 bg-field'>
+                                    <Lock className='size-3 text-subtle' />
+                                    <Text className='font-jakarta-bold text-xs text-subtle'>
+                                        Terkunci
+                                    </Text>
+                                </View>
+                            </View>
+                            <Text className='font-jakarta text-xs text-muted'>
+                                Target 30 Jan 2026 · Termin Rp 31.000.000
+                            </Text>
+                        </View>
+                    </View>
+
+                    {/* m4 */}
+                    <View className='flex-row gap-x-3'>
+                        <View className='items-center'>
+                            <View className='size-7 rounded-xl items-center justify-center bg-field'>
+                                <Text className='font-jakarta-bold text-xs text-subtle'>
+                                    M4
+                                </Text>
+                            </View>
+                        </View>
+                        <View className='flex-1 rounded-2xl bg-white p-3.5 gap-y-2 border border-outline'>
+                            <View className='flex-row items-start justify-between gap-x-2.5'>
+                                <Text className='flex-1 font-jakarta-bold text-sm text-foreground'>
+                                    M4 · Plumbing & listrik
+                                </Text>
+                                <View className='flex-row items-center gap-x-1.5 rounded-xl px-2.5 py-1.5 bg-field'>
+                                    <Lock className='size-3 text-subtle' />
+                                    <Text className='font-jakarta-bold text-xs text-subtle'>
+                                        Terkunci
+                                    </Text>
+                                </View>
+                            </View>
+                            <Text className='font-jakarta text-xs text-muted'>
+                                Target 25 Feb 2026 · Termin Rp 18.600.000
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+
+                <Text className='font-jakarta-bold text-lg mt-5 mx-5'>
+                    Berkas & laporan
+                </Text>
+
+                {/* perjanjian */}
+                <View className='mt-4 mx-5 flex flex-row gap-x-3 justify-between'>
+                    <View className='border border-outline gap-y-2 flex flex-col px-3 py-3 flex-1 rounded-2xl'>
+                        <View className='bg-field rounded-xl self-start px-3 py-2'>
+                            <FileCheck className='text-foreground size-4' />
+                        </View>
+                        <Text className='font-jakarta-bold text-foreground text-sm'>
+                            Laporan M1
+                        </Text>
+                        <Text className='font-jakarta text-muted text-sm'>
+                            PDF · 8.2 MB
+                        </Text>
+                    </View>
+                    <View className='border border-outline gap-y-2 flex flex-col px-3 py-3 flex-1 rounded-2xl'>
+                        <View className='bg-field rounded-xl self-start px-3 py-2'>
+                            <FileCheck className='text-foreground size-4' />
+                        </View>
+                        <Text className='font-jakarta-bold text-foreground text-sm'>
+                            Perjanjian
+                        </Text>
+                        <Text className='font-jakarta text-muted text-sm'>
+                            PDF · 2.4 MB
+                        </Text>
                     </View>
                 </View>
             </ScrollView>
