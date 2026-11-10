@@ -45,7 +45,7 @@ export default function HomeScreen() {
                     <View className='rounded-xl bg-primary px-5 py-5 '>
                         {/* dana */}
                         <View className='flex flex-col gap-y-2'>
-                            <Text className='text-sm text-on-dark'>
+                            <Text className='text-sm font-jakarta text-on-dark'>
                                 Dana di rekening penampung
                             </Text>
                             <Text className='font-jakarta-bold text-2xl text-white'>
@@ -59,7 +59,7 @@ export default function HomeScreen() {
                                 {/* 1 */}
                                 <View className='flex flex-row items-center gap-x-2'>
                                     <Receipt className='size-3 text-primary' />
-                                    <Text className='text-xs text-muted'>
+                                    <Text className='text-xs font-jakarta text-muted'>
                                         Dana material tersisa
                                     </Text>
                                 </View>
@@ -74,7 +74,7 @@ export default function HomeScreen() {
                                 {/* 1 */}
                                 <View className='flex flex-row items-center gap-x-2'>
                                     <Lock className='size-3 text-primary' />
-                                    <Text className='text-xs text-muted'>
+                                    <Text className='font-jakarta text-xs text-muted'>
                                         Upah tertahan
                                     </Text>
                                 </View>
@@ -128,7 +128,7 @@ export default function HomeScreen() {
                                 <Text className='font-jakarta-bold  text-sm text-foreground'>
                                     3 struk material renovasi
                                 </Text>
-                                <Text className='text-xs text-muted'>
+                                <Text className='font-jakarta text-xs text-muted'>
                                     Renovasi Rumah Kebayoran
                                 </Text>
                             </View>
@@ -145,7 +145,7 @@ export default function HomeScreen() {
                                 <Text className='font-jakarta-bold  text-sm text-foreground'>
                                     Milestone 2 siap tinjau
                                 </Text>
-                                <Text className='text-xs text-muted'>
+                                <Text className='font-jakarta text-xs text-muted'>
                                     12 foto progress diunggah mandor
                                 </Text>
                             </View>
@@ -162,7 +162,7 @@ export default function HomeScreen() {
                                 <Text className='font-jakarta-bold  text-sm text-foreground'>
                                     Penawaran baru dari Pak Dedi
                                 </Text>
-                                <Text className='text-xs text-muted'>
+                                <Text className='font-jakarta text-xs text-muted'>
                                     Rp 310.000.000 · 120 hari
                                 </Text>
                             </View>
@@ -196,7 +196,7 @@ export default function HomeScreen() {
                                     <Text className='font-jakarta-bold text-sm'>
                                         Renovasi Rumah Kebayoran
                                     </Text>
-                                    <Text className='text-xs text-muted'>
+                                    <Text className='font-jakarta text-xs text-muted'>
                                         Mandor: Pak Dedi Supriyadi
                                     </Text>
                                 </View>
