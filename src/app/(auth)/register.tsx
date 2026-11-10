@@ -182,12 +182,15 @@ export default function RegisterScreen() {
                 </View>
 
                 {/* daftar sekarang */}
-                <View className='mt-10 flex h-[3.5rem] w-full flex-row items-center justify-center gap-x-2 rounded-2xl bg-primary active:bg-primary-dark'>
+                <Pressable
+                    onPress={() => router.replace('/')}
+                    className='mt-10 flex h-[3.5rem] w-full flex-row items-center justify-center gap-x-2 rounded-2xl bg-primary active:bg-primary-dark'
+                >
                     <Text className='font-jakarta-bold text-lg text-white'>
                         Daftar Sekarang
                     </Text>
                     <ArrowRight className='size-[1.125rem] text-white'></ArrowRight>
-                </View>
+                </Pressable>
 
                 <View className='mt-7 flex flex-row justify-center gap-x-1'>
                     <Text className='font-jakarta text-sm text-muted'>
