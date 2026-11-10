@@ -12,6 +12,7 @@ import {
     FileCheck,
 } from '@/components/icons';
 import { Image } from 'expo-image';
+import { ProgressBar } from '@/components/progress-bar';
 
 export default function DetailProjectScreen() {
     return (
@@ -81,9 +82,7 @@ export default function DetailProjectScreen() {
                         </View>
 
                         {/* progress bar */}
-                        <View className='mt-4 h-4 w-full overflow-hidden rounded-full bg-field'>
-                            <View className='h-full w-[40%] rounded-full bg-primary' />
-                        </View>
+                        <ProgressBar value={40} className='mt-4 h-4 bg-field' />
 
                         <View className='flex flex-row gap-x-1 mt-4 justify-between'>
                             <View className='flex flex-col gap-y-1 bg-field px-5 py-3 rounded-2xl'>
@@ -146,9 +145,11 @@ export default function DetailProjectScreen() {
                         </View>
 
                         {/* 3 progress bar */}
-                        <View className='mt-4 h-3 w-full overflow-hidden rounded-full bg-primary-dark'>
-                            <View className='h-full w-[73%] rounded-full bg-field' />
-                        </View>
+                        <ProgressBar
+                            value={77}
+                            className='mt-4 h-3 bg-primary-dark'
+                            fillClassName='bg-field'
+                        />
 
                         <View className='mt-4 flex flex-row justify-between'>
                             <Text className='text-white  font-jakarta-semibold text-sm'>

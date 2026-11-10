@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Pressable, TextInputProps } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import {
@@ -9,42 +9,10 @@ import {
     ArrowRight,
 } from '@/components/icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import type { LucideIcon } from 'lucide-react-native';
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { Link, router } from 'expo-router';
-
-type InputFieldProps = TextInputProps & {
-    label: string;
-    icon: LucideIcon;
-    right?: ReactNode;
-};
-
-// ketika "focus:" nanti warna border dan text berubah. gk bisa pake class focus: bawaan nativewind
-function InputField({ label, icon: Icon, right, ...props }: InputFieldProps) {
-    const [focused, setFocused] = useState(false);
-
-    return (
-        <View>
-            <Text className='font-jakarta-semibold text-[12.5px] text-muted'>
-                {label}
-            </Text>
-            <View
-                className={`mt-[7px] flex h-[3.375rem] flex-row items-center gap-x-3 rounded-[14px] bg-field px-4 ${focused ? 'border-[1.5px] border-primary' : 'border border-outline'}`}
-            >
-                <Icon
-                    className={`size-[1.188rem] ${focused ? 'text-primary' : 'text-subtle'}`}
-                />
-                <TextInput
-                    className='flex-1 font-jakarta text-[15px] text-foreground'
-                    {...props}
-                    onFocus={() => setFocused(true)}
-                    onBlur={() => setFocused(false)}
-                />
-                {right}
-            </View>
-        </View>
-    );
-}
+import { InputField } from '@/components/input-field';
+import { Button } from '@/components/button';
 
 export default function LoginScreen() {
     const [show, setShow] = useState(false);
@@ -129,14 +97,8 @@ export default function LoginScreen() {
                 </View>
 
                 {/* masuk */}
-                <Pressable
-                    onPress={() => router.replace('/')}
-                    className='mt-4 flex h-[3.5rem] w-full flex-row items-center justify-center gap-x-2 rounded-2xl bg-primary active:bg-primary-dark'
-                >
-                    <Text className='font-jakarta-bold text-lg text-white'>
-                        Masuk
-                    </Text>
-                    <ArrowRight className='size-[1.125rem] text-white'></ArrowRight>
+                <Pressable onPress={() => router.replace('/')} className='mt-4'>
+                    <Button value='Masuk' icon={ArrowRight} />
                 </Pressable>
 
                 <View className='mt-6 flex flex-row justify-center gap-x-1'>

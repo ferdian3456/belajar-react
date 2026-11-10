@@ -13,6 +13,7 @@ import {
     CircleDot,
 } from '@/components/icons';
 import { router } from 'expo-router';
+import { ProgressBar } from '@/components/progress-bar';
 
 export default function HomeScreen() {
     return (
@@ -218,9 +219,7 @@ export default function HomeScreen() {
                                         40%
                                     </Text>
                                 </View>
-                                <View className='h-1.5 w-full overflow-hidden rounded-full bg-field'>
-                                    <View className='h-full w-[40%] rounded-full bg-primary' />
-                                </View>
+                                <ProgressBar value={40} />
                             </View>
                         </View>
                     </Pressable>
