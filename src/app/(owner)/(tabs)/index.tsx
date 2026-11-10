@@ -42,9 +42,9 @@ export default function HomeScreen() {
                 {/* content */}
                 <View className='px-5'>
                     {/* dashboard */}
-                    <View className='rounded-xl bg-primary px-5 py-5 '>
+                    <View className='rounded-3xl bg-primary px-5 py-5 '>
                         {/* dana */}
-                        <View className='flex flex-col gap-y-2'>
+                        <View className='flex flex-col gap-y-1'>
                             <Text className='text-sm font-jakarta text-on-dark'>
                                 Dana di rekening penampung
                             </Text>

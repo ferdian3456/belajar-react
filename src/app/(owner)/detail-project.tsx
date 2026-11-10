@@ -115,7 +115,7 @@ export default function DetailProjectScreen() {
                 </View>
 
                 {/* sisa uang */}
-                <View className='mt-5 mx-5 flex flex-col '>
+                <View className='mt-6 mx-5 flex flex-col '>
                     {/* sisa uang */}
                     <View className='px-4 py-4 bg-primary rounded-t-3xl'>
                         {/* 1 */}
@@ -206,7 +206,7 @@ export default function DetailProjectScreen() {
                 </View>
 
                 {/* milestone text */}
-                <View className='mt-5 mx-5 flex flex-row justify-between items-center'>
+                <View className='mt-6 mx-5 flex flex-row justify-between items-center'>
                     <Text className='font-jakarta-bold text-lg'>Milestone</Text>
                     <Text className='font-jakarta-semibold  text-primary text-base'>
                         Lihat semua
@@ -214,7 +214,7 @@ export default function DetailProjectScreen() {
                 </View>
 
                 {/* list mileston */}
-                <View className='mt-3 mx-5'>
+                <View className='mt-4 mx-5'>
                     {/* m1 */}
                     <View className='flex-row gap-x-3'>
                         <View className='items-center'>
@@ -322,7 +322,7 @@ export default function DetailProjectScreen() {
                     </View>
                 </View>
 
-                <Text className='font-jakarta-bold text-lg mt-5 mx-5'>
+                <Text className='font-jakarta-bold text-lg mt-6 mx-5'>
                     Berkas & laporan
                 </Text>
 
